@@ -1,6 +1,6 @@
 app:
   name: backend
-  group: default
+  group: choppeabarrock
 build:
   builder: maven
   container: jre
@@ -8,6 +8,6 @@ deploy:
   port: 8080
 docker:
   registry: docker.io
-  namespace: duvalhub
-  repository: spring-boot-api
+  namespace: choppeabarrock
+  repository: backend
 
