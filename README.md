@@ -117,8 +117,10 @@ CRUD EN GÉNÉRAL RETOURNE ET PREND UN 'image/json' mais dans le cas du /api/v1/
 		400 - Bad Request
 
 	-- DELETE
-		200 - OK
-		401 - Unauthorized 
+		204 - No Content (success + equipotent)
+		401 - Unauthorized (pas de Token)
+		403 - Forbidden (Role dans le Token pas bon)
+
 
 	-- UPDATE
 		200 - OK
@@ -134,6 +136,14 @@ SERVICE - Product CRUD /api/v1/products
 
 ------------------------------------
 SERVICE - Transaction CRUD /api/v1/transactions
+
+	curl -X POST /api/v1/transactions -d '{ <shopping card> }' 
+		+ collecter confirmation dans paypal
+			+ si confirmé, retourn '{ <numéro de confirmation de l'achat> }' 200 OK
+				+ envoit email
+			+ sinon, retourn 402 Payment Required
+
+
 
 ------------------------------------
 SERVICE - Image CRUD /api/v1/images
