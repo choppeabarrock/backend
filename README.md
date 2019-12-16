@@ -151,10 +151,13 @@ SERVICE - Image CRUD /api/v1/images
 ------------------------------------
 SERVICE - Authentication
 
+	-- je ne suis pas d'accord d'utiliser oauth2 dans l'URI. Et pourquoi pas JWT simplement? 
+	
 	POST /api/v1/oauth2/authenticate
-	GET /api/v1/oauth2/validate
-	PUT /api/v1/oauth2/renew
-
+	GET /api/v1/oauth2/validate 
+	PUT /api/v1/oauth2/renew (refresh token) 
+	
+	
 ------------------------------------
 REST - Image
 	curl -X POST /api/v1/images -d @/image/file/path -H 'Content-Type=image/jpg' -> 
