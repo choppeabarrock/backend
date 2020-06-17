@@ -7,6 +7,7 @@
 
 
 <code>
+	
 			User {
 				id: integer,
 				name: string,
