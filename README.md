@@ -4,6 +4,8 @@
 
 
 -- ENTITIES
+
+
 <code>
 			User {
 				id: integer,
@@ -97,6 +99,7 @@
 				url: string
 			}
 </code>			
+	
 	
 -- MODELS
 	Authentication {
