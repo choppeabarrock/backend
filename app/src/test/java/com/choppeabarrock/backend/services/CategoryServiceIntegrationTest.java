@@ -13,10 +13,11 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.choppeabarrock.backend.entities.Category;
+import com.choppeabarrock.backend.model.Category;
 import com.choppeabarrock.backend.repositories.CategoryRepository;
 
 import lombok.extern.slf4j.Slf4j;
@@ -26,7 +27,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Transactional
 public class CategoryServiceIntegrationTest {
+
 	@Autowired
+	@Qualifier("categoryRepository")
 	CategoryRepository repo;
 
 	@Autowired

@@ -6,11 +6,10 @@ import java.util.Optional;
 import com.choppeabarrock.backend.repositories.DefaultRepository;
 import org.springframework.stereotype.Service;
 
-import com.choppeabarrock.backend.entities.DefaultEntity;
+import com.choppeabarrock.backend.model.DefaultEntity;
 
 import lombok.Data;
 
-@Service
 @Data
 public class DefaultService<T extends DefaultEntity> {
 

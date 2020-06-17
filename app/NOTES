@@ -1,0 +1,80 @@
+
+
+localhost:8080/swagger-ui.html
+
+
+
+curl -D- localhost:8080/api/v1/categories
+
+
+
+
+
+11997  curl -D 'allo' https://config-server.duvalhub.dev.philippeduval.ca/encrypt
+ 1998  curl -v -D 'allo' https://config-server.duvalhub.dev.philippeduval.ca/encrypt
+ 1999  curl -d 'allo' https://config-server.duvalhub.dev.philippeduval.ca/encrypt
+ 2000  uuid
+
+ 2030  curl -D- localhost:8080/api/v1/categories
+ 2031  curl -D- -X POST -H 'Content-Type: text/json' -d '{}' localhost:8080/api/v1/categories
+
+
+ 2032  curl -D- -X POST -d '{}' localhost:8080/api/v1/categories
+
+ 2034  curl -D- -X POST -H 'Content-Type: application/json' -d '{"email":"philippeduval@me.com","password":"topsecret9"}' localhost:8080/api/v1/categories
+ 2035  curl -D- -X POST -H 'Content-Type: application/json' -d '{"name":"philippeduval@me.com","display":false}' localhost:8080/api/v1/categories
+ 2036  curl -D- -X POST -d '{"email":"philippeduval@me.com","password":"topsecret9"}' localhost:8080/api/v1/categories
+
+
+ 2037
+
+ 2038  curl localhost:8080/api/v1/categories  | python -m json.tool
+
+ 2039  curl -D- -X POST -H 'Content-Type: application/json' -d '{"name":"philippeduval@me.com-2","display":true}' localhost:8080/api/v1/categories
+
+ 2040  curl localhost:8080/api/v1/categories  | python -m json.tool
+ 2041  curl -s localhost:8080/api/v1/categories  | python -m json.tool
+ 2042  curl localhost:8080/api/v1/categories  | python -m json.tool 2> /dev/null
+ 2043  curl localhost:8080/api/v1/categories  | python -m json.tool 1> /dev/null
+ 2044  curl localhost:8080/api/v1/categories  | python -m json.tool 2> /dev/null
+ 2045  curl -s localhost:8080/api/v1/categories  | python -m json.tool
+
+ 2046  curl -s localhost:8080/hello
+ 2047  curl -D- localhost:8080/hello
+ 2048  curl -D- localhost:8080/hello ; echo ; echo
+
+ 2049  curl -D- localhost:8080/hello  | python -m json.tool  ; echo ; echo
+ 2050  curl -s localhost:8080/hello | python -m json.tool  ; echo ; echo
+ 2051  curl -s localhost:8080/hello1 | python -m json.tool  ; echo ; echo
+ 2052  curl -s localhost:8080/hello | python -m json.tool  ; echo ; echo
+ 2053  curl -s localhost:8080/helloworld | python -m json.tool  ; echo ; echo
+
+ 2054  curl -s localhost:8080/helloworld
+ 2055  curl localhost:8080/helloworld
+ 2056  curl -D- localhost:8080/helloworld
+ 2057  curl -s localhost:8080/helloworld | python -m json.tool  ; echo ; echo
+
+ 2058  curl -D- localhost:8080/helloworld ; echo ; echo
+
+ 2059  curl -D- -d '{}' localhost:8080/helloworld ; echo ; echo
+
+ 2060  curl -D- localhost:8080/helloworld ; echo ; echo
+ 2061  curl -s localhost:8080/helloworld | python -m json.tool  ; echo ; echo
+ 2062  curl -D- localhost:8080/helloworld ; echo ; echo
+ 2063  curl -s localhost:8080/helloworld | python -m json.tool  ; echo ; echo
+
+ 2064  curl -s localhost:8080/another | python -m json.tool  ; echo ; echo
+ 2065  curl -s localhost:8080/another  ; echo ; echo
+ 2066  curl -D- localhost:8080/another  ; echo ; echo
+ 2067  curl -s localhost:8080/helloworld | python -m json.tool  ; echo ; echo ;  curl -D- localhost:8080/another  ; echo ; echo
+
+ 2068  curl -s localhost:8080/helloworld
+
+ 2069  curl -s -H 'Content-Type: application/json' localhost:8080/helloworld
+ 2070  curl -s -H 'Content-Type: application/json' localhost:8080/helloworld  ; echo ; echo
+
+
+
+ 2033  curl -D- -X POST -d '{"email":"philippeduval@me.com","password":"topsecret9"}' localhost:8080/api/v1/categories
+
+

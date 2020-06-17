@@ -1,4 +1,4 @@
-package com.choppeabarrock.backend.entities;
+package com.choppeabarrock.backend.model;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
@@ -9,6 +9,16 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
+
+/*
+@Entity
+@Data
+@EqualsAndHashCode(callSuper = false)
+@SuperBuilder
+@NoArgsConstructor
+@AllArgsConstructor
+ implements Serializable
+*/
 
 @Entity
 @Data

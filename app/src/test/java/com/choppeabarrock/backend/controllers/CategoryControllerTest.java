@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
-import com.choppeabarrock.backend.entities.Category;
+import com.choppeabarrock.backend.model.Category;
 import com.choppeabarrock.backend.repositories.CategoryRepository;
 import com.choppeabarrock.backend.utils.EntityUtil;
 import com.choppeabarrock.backend.utils.StringUtil;
@@ -22,6 +22,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
@@ -44,6 +45,7 @@ public class CategoryControllerTest {
 	private MockMvc mockMvc;
 
 	@Autowired
+	@Qualifier("categoryRepository")
 	private CategoryRepository repo;
 
 	@Test

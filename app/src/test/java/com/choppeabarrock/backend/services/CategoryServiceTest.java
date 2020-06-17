@@ -7,7 +7,7 @@ import static org.mockito.Mockito.when;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.choppeabarrock.backend.entities.Category;
+import com.choppeabarrock.backend.model.Category;
 import com.choppeabarrock.backend.repositories.CategoryRepository;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
